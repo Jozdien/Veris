@@ -1,114 +1,79 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { createAppContainer, createSwitchNavigator  } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import Main from './app/components/Main';
+import News from './app/components/News';
+import Events from './app/components/Events';
+import Login from './app/components/Login';
+import Profile from './app/components/Profile';
+import Fees from './app/components/Fees';
+import Registration from './app/components/Registration';
+import Announcements from './app/components/Announcements';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const MainStack = createStackNavigator(
+  {
+    Main: Main,
+  }
+);
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
-};
+const NewsStack = createStackNavigator(
+  {
+    News: News,
+  }
+);
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+const EventsStack = createStackNavigator(
+  {
+    Events: Events,
+  }
+);
 
-export default App;
+const LoginStack = createStackNavigator(
+  {
+    Login: Login,
+  }
+);
+
+const ProfileStack = createStackNavigator(
+  {
+    Profile: Profile,
+  }
+);
+
+const FeesStack = createStackNavigator(
+  {
+    Fees: Fees,
+  }
+);
+
+const RegistrationStack = createStackNavigator(
+  {
+    Registration: Registration,
+  }
+);
+
+const AnnouncementsStack = createStackNavigator(
+  {
+    Announcements: Announcements,
+  }
+);
+
+const UserAppNavigator = createStackNavigator({
+  Main: Main,
+  News: News,
+  Events: Events,
+  Login: Login,
+  Profile: Profile,
+  Fees: Fees,
+  Registration: Registration,
+  Announcements: Announcements
+})
+
+export default createAppContainer(createSwitchNavigator(
+  {
+    UserMain: { screen: UserAppNavigator },
+  },
+  {
+    initialRouteName: 'UserMain',
+  }
+));
