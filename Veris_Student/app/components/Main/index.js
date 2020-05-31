@@ -29,7 +29,7 @@ export default class Launch extends React.Component {
           <View style={styles.secondbuffer}/>
           <View style={styles.portalInnerView}>
             <ShadowView style={styles.portalShadow}>
-              <TouchableOpacity style={styles.portalButton}>
+              <TouchableOpacity style={styles.portalButton} onPress={() => this.props.navigation.navigate("Login")}>
                 <Icon name="ios-school" size={65}/>
               </TouchableOpacity>
             </ShadowView>
@@ -44,7 +44,7 @@ export default class Launch extends React.Component {
           <View style={styles.thirdbuffer}/>
           <View style={styles.eventsView}>
             <ShadowView style={styles.eventsShadow}>
-              <TouchableOpacity style={styles.eventsButton}>
+              <TouchableOpacity style={styles.eventsButton} onPress={() => this.props.navigation.navigate("Events")}>
                 <Icon2 name="event" size={40}/>
               </TouchableOpacity>
             </ShadowView>
@@ -55,7 +55,7 @@ export default class Launch extends React.Component {
           <View style={styles.fourthbuffer}/>
           <View style={styles.newsView}>
             <ShadowView style={styles.newsShadow}>
-              <TouchableOpacity style={styles.newsButton}>
+              <TouchableOpacity style={styles.newsButton} onPress={() => this.props.navigation.navigate("News")}>
                 <Icon3 name="newspaper-o" size={35}/>
               </TouchableOpacity>
             </ShadowView>
