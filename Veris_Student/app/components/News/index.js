@@ -9,15 +9,15 @@ export default class Launch extends React.Component {
     super()
     this.state = {
       news: [{id: 1,
-              title: "Regarding the KTU Tech Fest", 
-              description: "The KTU Tech Fest is scheduled to take place on the 26th of June, 2020.  It will be huge."},
+              title: "Announcement Headline", 
+              description: "Announcement description"},
              {id: 2,
-              title: "College Policy on Online Classes and Coursework", 
-              description: "Due to the coronavirus breakout, the college has been temporarily switched to handling classes on the inter-web."}
+              title: "Announcement Headline", 
+              description: "Announcement description"}
             ],
       new: {id: 1,
-            title: "Regarding the KTU Tech Fest", 
-            description: "The KTU Tech Fest is scheduled to take place on the 26th of June, 2020.  It will be huge."},
+            title: "Announcement Headline", 
+            description: "Announcement description"},
       visibility: false
     }
   }
@@ -66,12 +66,15 @@ export default class Launch extends React.Component {
           <View style={styles.modalScreen}>
             <View style={styles.secondbufferone}/>
             <View style={styles.modal}>
-              <View style={styles.modalHeadView}>
-                <Text style={styles.modalHead}>{this.state.new.title}</Text>
-              </View>
-              <View style={styles.modalDescriptionView}>
+              <View style={styles.thirdbuffer}/>
+              <View style={styles.scrollContainer}>
                 <ScrollView>
-                  <Text style={styles.modalDescription}>{this.state.new.description}</Text>
+                  <View style={styles.modalHeadView}>
+                      <Text style={styles.modalHead}>{this.state.new.title}</Text>
+                  </View>
+                  <View style={styles.modalDescriptionView}>
+                      <Text style={styles.modalDescription}>{this.state.new.description}</Text>
+                  </View>
                 </ScrollView>
               </View>
               <TouchableOpacity style={styles.closeView} onPress={() => {this.setState({visibility: false})}}>

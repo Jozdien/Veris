@@ -51,11 +51,17 @@ export default StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#101010'
     },
+    thirdbuffer: {
+        flex: 0.8,
+    },
+    scrollContainer: {
+        flex: 11.8
+    },
     modalHeadView: {
-        flex: 2.6,
+        flex: 1.8,
         marginLeft: '5%',
         marginRight: '5%',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-start'
     },
     modalDescriptionView: {
         flex: 10,
