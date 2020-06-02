@@ -1,95 +1,36 @@
 import React from 'react';
-import { createAppContainer, createSwitchNavigator  } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Main from './components/Main';
 import News from './components/News';
 import Events from './components/Events';
 import Login from './components/Login';
 import Profile from './components/Profile';
 import Attendance from './components/Attendance';
-import Blogs from './components/Blogs';
-import Fees from './components/Fees';
 import Marks from './components/Marks';
 import Notifications from './components/Notifications';
 
-const MainStack = createStackNavigator(
-  {
-    Main: Main,
-  }
-);
+const Stack = createStackNavigator();
 
-const NewsStack = createStackNavigator(
-  {
-    News: News,
-  }
-);
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+      initialRouteName="Main"
+      screenOptions={{
+        headerShown: false,
+      }}>
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="News" component={News} />
+        <Stack.Screen name="Events" component={Events} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Attendance" component={Attendance} />
+        <Stack.Screen name="Marks" component={Marks} />
+        <Stack.Screen name="Notifications" component={Notifications} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
-const EventsStack = createStackNavigator(
-  {
-    Events: Events,
-  }
-);
-
-const LoginStack = createStackNavigator(
-  {
-    Login: Login,
-  }
-);
-
-const ProfileStack = createStackNavigator(
-  {
-    Profile: Profile,
-  }
-);
-
-const AttendanceStack = createStackNavigator(
-  {
-    Attendance: Attendance,
-  }
-);
-
-const BlogsStack = createStackNavigator(
-  {
-    Blogs: Blogs,
-  }
-);
-
-const FeesStack = createStackNavigator(
-  {
-    Fees: Fees,
-  }
-);
-
-const MarksStack = createStackNavigator(
-  {
-    Marks: Marks,
-  }
-);
-
-const NotificationsStack = createStackNavigator(
-  {
-    Notifications: Notifications,
-  }
-);
-
-const UserAppNavigator = createStackNavigator({
-  Main: Main,
-  News: News,
-  Events: Events,
-  Login: Login,
-  Profile: Profile,
-  Attendance: Attendance,
-  Blogs: Blogs,
-  Fees: Fees,
-  Marks: Marks,
-  Notifications: Notifications
-})
-
-export default createAppContainer(createSwitchNavigator(
-  {
-    UserMain: { screen: UserAppNavigator },
-  },
-  {
-    initialRouteName: 'UserMain',
-  }
-));
+export default App;

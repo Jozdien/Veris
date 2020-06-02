@@ -1,6 +1,6 @@
 import React from 'react';
-import { createAppContainer, createSwitchNavigator  } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Main from './components/Main';
 import News from './components/News';
 import Events from './components/Events';
@@ -10,70 +10,27 @@ import Fees from './components/Fees';
 import Registration from './components/Registration';
 import Announcements from './components/Announcements';
 
-const MainStack = createStackNavigator(
-  {
-    Main: Main,
-  }
-);
+const Stack = createStackNavigator();
 
-const NewsStack = createStackNavigator(
-  {
-    News: News,
-  }
-);
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+      initialRouteName="Main"
+      screenOptions={{
+        headerShown: false,
+      }}>
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="News" component={News} />
+        <Stack.Screen name="Events" component={Events} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Fees" component={Fees} />
+        <Stack.Screen name="Registration" component={Registration} />
+        <Stack.Screen name="Announcements" component={Announcements} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
-const EventsStack = createStackNavigator(
-  {
-    Events: Events,
-  }
-);
-
-const LoginStack = createStackNavigator(
-  {
-    Login: Login,
-  }
-);
-
-const ProfileStack = createStackNavigator(
-  {
-    Profile: Profile,
-  }
-);
-
-const FeesStack = createStackNavigator(
-  {
-    Fees: Fees,
-  }
-);
-
-const RegistrationStack = createStackNavigator(
-  {
-    Registration: Registration,
-  }
-);
-
-const AnnouncementsStack = createStackNavigator(
-  {
-    Announcements: Announcements,
-  }
-);
-
-const UserAppNavigator = createStackNavigator({
-  Main: Main,
-  News: News,
-  Events: Events,
-  Login: Login,
-  Profile: Profile,
-  Fees: Fees,
-  Registration: Registration,
-  Announcements: Announcements
-})
-
-export default createAppContainer(createSwitchNavigator(
-  {
-    UserMain: { screen: UserAppNavigator },
-  },
-  {
-    initialRouteName: 'UserMain',
-  }
-));
+export default App;
