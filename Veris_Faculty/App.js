@@ -1,14 +1,14 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator  } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import Main from './app/components/Main';
-import News from './app/components/News';
-import Events from './app/components/Events';
-import Login from './app/components/Login';
-import Profile from './app/components/Profile';
-import Attendance from './app/components/Attendance';
-import Marks from './app/components/Marks';
-import Notifications from './app/components/Notifications';
+import Main from './components/Main';
+import News from './components/News';
+import Events from './components/Events';
+import Login from './components/Login';
+import Profile from './components/Profile';
+import Attendance from './components/Attendance';
+import Marks from './components/Marks';
+import Notifications from './components/Notifications';
 
 const MainStack = createStackNavigator(
   {
