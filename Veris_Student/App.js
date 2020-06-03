@@ -7,6 +7,8 @@ import Events from './components/Events';
 import Login from './components/Login';
 import Profile from './components/Profile';
 import Attendance from './components/Attendance';
+import Blogs from './components/Blogs';
+import Fees from './components/Fees';
 import Marks from './components/Marks';
 import Notifications from './components/Notifications';
 
@@ -26,6 +28,8 @@ function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Attendance" component={Attendance} />
+        <Stack.Screen name="Blogs" component={Blogs} />
+        <Stack.Screen name="Fees" component={Fees} />
         <Stack.Screen name="Marks" component={Marks} />
         <Stack.Screen name="Notifications" component={Notifications} />
       </Stack.Navigator>
