@@ -116,18 +116,18 @@ export default class Launch extends React.Component {
           <View style={styles.modalScreen}>
             <View style={styles.secondbufferone}/>
             <View style={styles.modal}>
-              <View style={styles.modalHeadView}>
-                <Text style={styles.modalHead}>{this.state.blog.title}</Text>
+              <View style={styles.blogHeadView}>
+                <Text style={styles.blogHead}>{this.state.blog.title}</Text>
               </View>
-              <View style={styles.modalDateView}>
-                <Text style={styles.modalDate}>{this.state.blog.author}<Icon name="dot-single" size={10} color="#B0B0B0"/>{this.state.blog.category}</Text>
+              <View style={styles.blogDetailsView}>
+                <Text style={styles.blogDetails}>{this.state.blog.author}<Icon name="dot-single" size={10} color="#B0B0B0"/>{this.state.blog.category}</Text>
               </View>
-              <View style={styles.modalDescriptionView}>
+              <View style={styles.blogDescriptionView}>
                 <ScrollView>
-                  <Text style={styles.modalDescription}>{this.state.blog.description}</Text>
+                  <Text style={styles.blogDescription}>{this.state.blog.description}</Text>
                 </ScrollView>
               </View>
-              <TouchableOpacity style={styles.closeView} onPress={() => {this.setState({visibility: false})}}>
+              <TouchableOpacity style={styles.blogCloseView} onPress={() => {this.setState({visibility: false})}}>
                 <Text style={styles.close}>
                   Close
                 </Text>

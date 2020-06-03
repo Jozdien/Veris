@@ -69,6 +69,30 @@ export default StyleSheet.create({
     	borderRadius: 10,
     	backgroundColor: '#101010'
     },
+    blogHeadView: {
+    	flex: 9,
+    	marginLeft: '4%',
+    	marginRight: '5%',
+    	justifyContent: 'flex-end'
+    },
+    blogDetailsView: {
+    	flex: 2,
+    	marginLeft: '4%',
+        marginTop: '2%',
+        justifyContent: 'center'
+    },
+    blogDescriptionView: {
+    	flex: 53,
+    	marginLeft: '6%',
+    	marginRight: '6%',
+    	marginTop: '5%'
+    },
+    blogCloseView: {
+    	flex: 10,
+    	borderTopWidth: 0.2,
+    	borderColor: '#C0C0C0',
+    	justifyContent: 'center'
+    },
     modalHeadView: {
     	flex: 9,
     	marginLeft: '4%',
@@ -131,6 +155,21 @@ export default StyleSheet.create({
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
+    },
+    blogHead: {
+    	fontSize: height/30,
+    	color: '#F0F0F0',
+    	fontFamily: 'Montserrat-SemiBold',
+    },
+    blogDetails: {
+    	fontSize: height/53,
+        color: '#B0B0B0',
+        fontFamily: 'Montserrat-Regular',
+    },
+    blogDescription: {
+    	fontSize: height/50,
+    	color: '#D0D0D0',
+    	fontFamily: 'Montserrat-Medium',
     },
     modalHead: {
     	fontSize: height/30,
