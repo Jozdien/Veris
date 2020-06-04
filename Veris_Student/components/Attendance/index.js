@@ -79,7 +79,6 @@ export default class Launch extends React.Component {
             style={styles.datePicker}
             date={this.state.date}
             mode="date"
-            placeholder="Select Date"
             format="YYYY-MM-DD"
             minDate="2001-02-20"
             maxDate="2030-12-31"
