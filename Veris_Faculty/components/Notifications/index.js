@@ -99,12 +99,12 @@ export default class Launch extends React.Component {
             <View style={styles.modal_add}>
               <View style={styles.modalHeadView_add}>
                 <TextInput maxlength={320} placeholder="Notification Title" placeholderTextColor="#909090" 
-                           onChangeText={(title) => this.setState({title})} style={styles.modalHead_add}></TextInput>
+                           onChangeText={(title) => this.setState({title: title})} style={styles.modalHead_add}></TextInput>
               </View>
               <View style={styles.modalDescriptionView_add}>
                 <ScrollView>
                   <TextInput maxlength={2000} placeholder="Notification Description" placeholderTextColor="#909090" multiline={true} 
-                             onChangeText={(description) => this.setState({description})} style={styles.modalDescription_add}></TextInput>
+                             onChangeText={(description) => this.setState({description: description})} style={styles.modalDescription_add}></TextInput>
                 </ScrollView>
               </View>
               <TouchableOpacity style={styles.modalClose_add} onPress={() => {this.setState({visibility_add: false})}}>

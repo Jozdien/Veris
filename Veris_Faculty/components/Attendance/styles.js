@@ -170,7 +170,7 @@ export default StyleSheet.create({
     },
     option: {
     	flex: 2,
-    	marginTop: '7.1%',
+    	paddingTop: '7.1%',
     	paddingBottom: '7.1%',
     	borderBottomWidth: 0.2,
     	borderColor: '#606060',
