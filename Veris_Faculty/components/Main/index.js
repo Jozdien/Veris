@@ -34,7 +34,7 @@ export default class Launch extends React.Component {
               </TouchableOpacity>
             </ShadowView>
             <View style={styles.portalTextView}>
-              <Text style={styles.portalText}>Student Portal</Text>
+              <Text style={styles.portalText}>Faculty Portal</Text>
             </View>
           </View>
           <View style={styles.secondbuffer}/>

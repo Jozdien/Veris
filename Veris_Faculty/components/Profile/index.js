@@ -14,8 +14,7 @@ export default class Launch extends React.Component {
     this.state = {
       picture: require('../assets/default.jpg'),
       name: "Cín est",
-      semester: "0",
-      id: "TVE00XX000",
+      id: "College Name",
       courses: [{id: 1,
                  class: "S0 CSE",
                  code: "XX100", 
@@ -67,7 +66,7 @@ export default class Launch extends React.Component {
           <View style={styles.details}>
             <View style={styles.fourthbufferone}/>
             <View style={styles.nameView}>
-              <Text style={styles.name} numberOfLines={2}>{this.state.name}<Icon4 name="dot-single" size={16} color="#B0B0B0"/>S{this.state.semester}</Text>
+              <Text style={styles.name} numberOfLines={2}>{this.state.name}</Text>
             </View>
             <View style={styles.idView}>
               <Text style={styles.id}>{this.state.id}</Text>
