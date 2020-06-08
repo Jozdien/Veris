@@ -81,42 +81,42 @@ export default StyleSheet.create({
     	flex: 1,
     },
     events: {
-    	fontSize: height/20,
+    	fontSize: width/12.0401337793,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Bold',
     },
     title: {
-    	fontSize: height/40,
+    	fontSize: width/24.0802675585,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-SemiBold',
     },
     description: {
-    	fontSize: height/55,
+    	fontSize: width/33.110367893,
     	color: '#E0E0E0',
     	fontFamily: 'Montserrat-Regular',
     },
     date: {
-    	fontSize: height/52,
+    	fontSize: width/31.3043478261,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Medium',
     },
     modalHead: {
-    	fontSize: height/30,
+    	fontSize: width/18.0602006689,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-SemiBold',
     },
     modalDate: {
-    	fontSize: height/55,
+    	fontSize: width/33.110367893,
     	color: '#B0B0B0',
     	fontFamily: 'Montserrat-Regular',
     },
     modalDescription:{
-    	fontSize: height/50,
+    	fontSize: width/30.1003344482,
     	color: '#D0D0D0',
     	fontFamily: 'Montserrat-Medium',
     },
     close: {
-    	fontSize: height/36,
+    	fontSize: width/21.6722408027,
     	color: '#E0E0E0',
     	fontFamily: 'Montserrat-SemiBold',
     	textAlign: 'center'
