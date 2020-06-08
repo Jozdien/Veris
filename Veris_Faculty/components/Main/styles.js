@@ -2,8 +2,8 @@ import { StyleSheet, Dimensions } from 'react-native';
 const dimensions = Dimensions.get('window');
 const height = dimensions.height;
 const width = dimensions.width;
-const fontsize = height/35.5;
-// #E56967
+const fontsize = width/21.3712374582;
+// height/width = 1.66111111111
 
 export default StyleSheet.create({
     parent: {
@@ -25,6 +25,7 @@ export default StyleSheet.create({
     },
     portalShadow: {
         flex: 4,
+        width: width/2.8,
         borderRadius: 100,
         backgroundColor: '#E56967',
         shadowColor: '#090909',
@@ -35,7 +36,7 @@ export default StyleSheet.create({
     portalButton: {
         flex: 1,
         height: '100%',
-        width: '100%',
+        width: width/2.8,
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
@@ -59,6 +60,7 @@ export default StyleSheet.create({
     },
     eventsShadow: {
         flex: 3,
+        width: width/3.9,
         borderRadius: 100,
         backgroundColor: '#E56967',
         shadowColor: '#090909',
@@ -69,7 +71,7 @@ export default StyleSheet.create({
     eventsButton: {
         flex: 1,
         height: '100%',
-        width: '100%',
+        width: width/3.9,
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
@@ -86,6 +88,7 @@ export default StyleSheet.create({
     },
     newsShadow: {
         flex: 3,
+        width: width/3.9,
         borderRadius: 100,
         backgroundColor: '#E56967',
         shadowColor: '#090909',
@@ -96,7 +99,7 @@ export default StyleSheet.create({
     newsButton: {
         flex: 1,
         height: '100%',
-        width: '100%',
+        width: width/3.9,
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
