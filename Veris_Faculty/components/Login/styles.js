@@ -66,24 +66,24 @@ export default StyleSheet.create({
     	flex: 35,
     },
     veris: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	fontFamily: 'Montserrat-Light',
     	color: '#E56967',
     	textAlign: 'center',
     },
     input: {
-    	fontSize: height/45,
+    	fontSize: width*1.66111111111/45,
     	fontFamily: 'Montserrat-Regular',
     	color: 'black',
     },
     login: {
-    	fontSize: height/33,
+    	fontSize: width*1.66111111111/33,
     	fontFamily: 'Montserrat-Medium',
     	color: '#F0F0F0',
     	textAlign: 'center',
     },
     forgot: {
-    	fontSize: height/45,
+    	fontSize: width*1.66111111111/45,
     	fontFamily: 'Montserrat-Light',
     	color: '#C0C0C0',
     	textAlign: 'center',
