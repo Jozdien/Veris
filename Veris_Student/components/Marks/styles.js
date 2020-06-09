@@ -114,7 +114,7 @@ export default StyleSheet.create({
     	justifyContent: 'center'
     },
     courses: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Bold',
     },
