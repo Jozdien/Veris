@@ -183,7 +183,7 @@ export default StyleSheet.create({
     	justifyContent: 'center'
     },
     notifications: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Bold',
     },
@@ -194,45 +194,45 @@ export default StyleSheet.create({
     	marginLeft: '5%',
     },
     title: {
-    	fontSize: height/38,
+    	fontSize: width*1.66111111111/38,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-SemiBold',
     },
     description: {
-    	fontSize: height/48,
+    	fontSize: width*1.66111111111/48,
     	color: '#E0E0E0',
     	fontFamily: 'Montserrat-Regular',
     },
     add: {
-        fontSize: height/30,
+        fontSize: width*1.66111111111/30,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
     },
     modalHead_add: {
-    	fontSize: height/30,
+    	fontSize: width*1.66111111111/30,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-SemiBold',
         borderBottomWidth: 1,
         borderColor: '#909090'
     },
     modalDescription_add: {
-    	fontSize: height/50,
+    	fontSize: width*1.66111111111/50,
     	color: '#D0D0D0',
     	fontFamily: 'Montserrat-Medium',
     },
     modalHead: {
-        fontSize: height/30,
+        fontSize: width*1.66111111111/30,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
     },
     modalDescription:{
-        fontSize: height/50,
+        fontSize: width*1.66111111111/50,
         color: '#D0D0D0',
         fontFamily: 'Montserrat-Medium',
     },
     close: {
-        fontSize: height/36,
+        fontSize: width*1.66111111111/36,
         color: '#E0E0E0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
