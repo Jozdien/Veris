@@ -56,7 +56,7 @@ export default StyleSheet.create({
     	paddingTop: '6%',
     },
     footerText: {
-        fontSize: height/35,
+        fontSize: width*1.66111111111/35,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
