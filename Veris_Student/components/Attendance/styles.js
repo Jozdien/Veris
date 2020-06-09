@@ -66,7 +66,7 @@ export default StyleSheet.create({
         alignSelf: 'center'
     },
     attendanceText: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Bold',
     },
@@ -76,7 +76,7 @@ export default StyleSheet.create({
         color: '#D0D0D0'
     },
     date: {
-        fontSize: height/27,
+        fontSize: width*1.66111111111/27,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-Medium',
     },
