@@ -190,32 +190,32 @@ export default StyleSheet.create({
     	flex: 1,
     },
     fees: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Bold',
     },
     due: {
-        fontSize: height/32,
+        fontSize: width*1.66111111111/32,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-Regular'
     },
     title: {
-    	fontSize: height/38,
+    	fontSize: width*1.66111111111/38,
     	color: '#F0F0F0',
     	fontFamily: 'Montserrat-Medium',
     },
     date: {
-    	fontSize: height/50,
+    	fontSize: width*1.66111111111/50,
         color: '#D0D0D0',
         fontFamily: 'Montserrat-Light'
     },
     amount: {
-    	fontSize: height/40,
+    	fontSize: width*1.66111111111/40,
         color: '#D0D0D0',
         fontFamily: 'Montserrat-Regular',
     },
     footerText: {
-        fontSize: height/35,
+        fontSize: width*1.66111111111/35,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
