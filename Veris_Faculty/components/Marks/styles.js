@@ -227,7 +227,7 @@ export default StyleSheet.create({
     	justifyContent: 'center'
   	},
     headerText: {
-    	fontSize: height/20,
+    	fontSize: width*1.66111111111/20,
     	fontFamily: 'Montserrat-Bold',
     	color: '#F0F0F0',
     },
@@ -249,7 +249,7 @@ export default StyleSheet.create({
     	textAlign: 'center'
     },
     footerText: {
-    	fontSize: height/30,
+    	fontSize: width*1.66111111111/30,
         color: '#F0F0F0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
@@ -261,13 +261,13 @@ export default StyleSheet.create({
     	textAlign: 'center'
     },
     close: {
-    	fontSize: height/36,
+    	fontSize: width*1.66111111111/36,
         color: '#E0E0E0',
         fontFamily: 'Montserrat-SemiBold',
         textAlign: 'center'
     },
     modalName: {
-    	fontSize: height/32,
+    	fontSize: width*1.66111111111/32,
         color: '#E0E0E0',
         fontFamily: 'Montserrat-SemiBold',
     },
